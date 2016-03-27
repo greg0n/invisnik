@@ -9,6 +9,6 @@ return [
     /*
      *  Api Key (http://steamcommunity.com/dev/apikey)
      */
-    'api_key' => 'Api_Key'
+    'api_key' => 'D255564C3DE4E37D1576303E4CE52980'
 
 ];
