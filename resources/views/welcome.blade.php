@@ -39,6 +39,14 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
+                @if(Auth::check())
+                    <img src="{{ Auth::user()->avatar }}">
+                    <p>{{ Auth::user()->username }}</p>
+                    <p>{{ Auth::user()->steamid }}</p>
+                    <p><a href="logout">LOGOUT</a></p>
+                @else
+                    <p><a href="steamlogin">Log into steam</a></p>
+                @endif
             </div>
         </div>
     </body>
