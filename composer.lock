@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "10a2871f1b45c8dccd1e8dc8f6a2e48f",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "990c11d6db36422a9ef9f56e73d50112",
+    "content-hash": "40dc703b75bf5084629e15aa17973c37",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1929,6 +1929,48 @@
                 "test"
             ],
             "time": "2015-05-11 14:41:42"
+        },
+        {
+            "name": "invisnik/laravel-steam-auth",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/invisnik/laravel-steam-auth.git",
+                "reference": "d75eda53996495db831eda1b7ea78326128544ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/invisnik/laravel-steam-auth/zipball/d75eda53996495db831eda1b7ea78326128544ab",
+                "reference": "d75eda53996495db831eda1b7ea78326128544ab",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Invisnik\\LaravelSteamAuth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Brytkov",
+                    "email": "invis.nik@gmail.com"
+                }
+            ],
+            "description": "Laravel Steam Auth",
+            "keywords": [
+                "auth",
+                "laravel",
+                "steam"
+            ],
+            "time": "2015-08-19 12:25:26"
         },
         {
             "name": "mockery/mockery",
