@@ -27,7 +27,7 @@ class AuthController extends Controller
                 $user = User::where('steamid', $info->getSteamID64())->first();
                 if (! is_null($user)) {
                     Auth::login($user, true);
-                    return redirect('/'); // redirect to site
+                    return redirect('/home'); // redirect to site
                 }else{
                     $user = User::create([
                         'username' => $info->getNick(),
@@ -35,7 +35,7 @@ class AuthController extends Controller
                         'steamid'  => $info->getSteamID64()
                     ]);
                     Auth::login($user, true);
-                    return redirect('/'); // redirect to site
+                    return redirect('/home'); // redirect to site
                 }
             }
         } else {
