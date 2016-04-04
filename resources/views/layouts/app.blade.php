@@ -13,7 +13,9 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+    {{--css/app.css -> public/css/app.css, które tworzymy z resources/assets/sass/app.scss + gulp--}}
+    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
+    {{--<link href="/css/style.css" rel="stylesheet">--}}
 
     <style>
         body {
@@ -54,12 +56,14 @@
             <ul class="nav navbar-nav navbar-right">
                 <!-- Authentication Links -->
                 @if (Auth::guest())
-                    <li><a href="{{ url('/steamlogin') }}">Login</a></li>
+                    <li><a class="vl-header-btn-sign-in" href="{{ url('/steamlogin') }}" ><p>Sign In With Steam</p></a></li>
                     {{--<li><a href="{{ url('/register') }}">Register</a></li>--}}
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            {{ Auth::user()->username }} <span class="caret"></span>
+                            <img src="{{ Auth::user()->avatar }}" class="img-circle">
+                            <span style="font-size:20px">{{ Auth::user()->username }}</span>
+                            <span class="caret"></span>
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
@@ -80,3 +84,4 @@
 {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>
 </html>
+

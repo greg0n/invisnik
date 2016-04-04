@@ -1,2 +1,56 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+$primary: purple;
+
+body {
+  color: $primary;
+}
+
+.vl-header-btn-sign-in {
+  display:inline-block !important;
+  line-height:25px !important;
+  background:-webkit-linear-gradient(#d2dab0 1px,#9cb240 0,#596429 100%,#414a1e 1px);
+  background:linear-gradient(#d2dab0 1px,#9cb240 0,#596429 100%,#414a1e 1px);
+  border-radius:4px;
+  cursor: pointer;
+  box-shadow:0 1px 5px rgba(0,0,0,.3);
+  -webkit-transition:ease .5s;
+  transition:ease .5s;
+  text-decoration:none;
+
+  padding-left: 50px !important;
+  position:relative !important;
+}
+
+.vl-header-btn-sign-in:before {
+  content:"";
+  display:inline-block;
+  width:25px;
+  height:19px;
+  background:url(../images/sign-in-icon.png) top center no-repeat;
+  background-size:contain;
+  position:absolute;
+  padding:15px;
+  left:10px;
+}
+.vl-header-btn-sign-in:hover {
+  background:-webkit-linear-gradient(#d2dab0 1px,#b6d240 0,#788e1d 100%,#414a1e 1px);
+  background:linear-gradient(#d2dab0 1px,#b6d240 0,#788e1d 100%,#414a1e 1px);
+  text-decoration:none;
+}
+.vl-header-btn-sign-in{
+  p {
+    font-size:20px;
+    margin:0px;
+    color:#fff;
+  }
+}
+
+img {
+  height: 35px;
+  width: 35px;
+}
+
+.dropdown-toggle {
+  padding:10px 15px 10px 15px !important;
+}
